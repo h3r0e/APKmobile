@@ -174,7 +174,7 @@ def pythonServer(directoryApkSigned):
     if os.path.exists(directoryApkSigned):
         printMessage = "\nPython server abierto en el puerto 444.\n"
         os.chdir(directoryApkSigned)
-        os.system(f"gnome-terminal -- bash -c 'echo \"{printMessage}\";python -m http.server 444; bash'")
+        os.system(f"gnome-terminal -- bash -c 'echo \"{printMessage}\";python3 -m http.server 444; bash'")
 
 def startMsfvenom():
     print(f"\nInstala el APK en el móvil.")
